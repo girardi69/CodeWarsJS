@@ -23,6 +23,16 @@ function rgb(x, y){
         : arr[2]
 }
 ```
+There is another possible solution, that is to return the element x if x = y, otherwise to .pop() the two other elements and return the remaining element.
+```
+pseudocode: return x === y ? x : pop(x),pop(y) and return z
+
+Code Here
+```
+
+
+
+
 Test set:
 ```
 console.log(rgb('a','a'));
