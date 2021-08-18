@@ -1,3 +1,4 @@
+```
 function squareDigits(num){
   let arr = String(num).split("");
   let newArr = [];
@@ -7,9 +8,10 @@ function squareDigits(num){
   return Number(newArr.join(""));
 } 
 const squareDigits = (num) => String(num).split("").map(c => c *c).join(""));  
+```
   
 *@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@
-
+```
 function multiple(x) {
   return x % 3 == 0 && x % 5 == 0 ? "BangBoom" :
     x % 5 == 0 ? "Boom" :
@@ -17,5 +19,5 @@ function multiple(x) {
     "Miss"
 }
 const multiple = x => x%15?x%5?x%3? 'Miss':'Bang':'Boom':'BangBoom'
-
+```
 *@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@
