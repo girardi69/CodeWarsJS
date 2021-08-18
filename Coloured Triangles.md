@@ -5,15 +5,13 @@ function rgb(x, y){
     return (x ? x == y : y) ? x : n == 195 ? 'c' : n==196 ? 'b': 'a'
 }
 ```
-A better solution could be setting an array [R, G, B] and check for the positions in the array. 
+A better solution could be setting an array [R, G, B] and check for the positions in the array. 9 cases to be considered:  
 if x at 0 and y at 0 return 0  
-if x at 1 and y at 2 return 0 
+if x at 1 and y at 2 return 0  
 if x at 2 and y at 1 return 0  
-return (x==0&&y==0)||(x==1&&y==2)||(x==2&&y==1) ? arr[0] : (x==0&&y==2)||(x==1&&y==1)||(x==2&&y==0) ? arr[1] : arr[2]
 if x at 0 and y at 2 return 1  
 if x at 1 and y at 1 return 1  
 if x at 2 and y at 0 return 1  
-
 if x at 1 and y at 0 return 2  
 if x at 0 and y at 1 return 2  
 if x at 2 and y at 2 return 2  
